@@ -1,1 +1,35 @@
-/* Kubernetes deployment configuration */
+// kubernetes/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: linkbio-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: linkbio-api
+  template:
+    metadata:
+      labels:
+        app: linkbio-api
+    spec:
+      containers:
+      - name: linkbio-api
+        image: linkbio-api:latest
+        ports:
+        - containerPort: 3000
+        env:
+        - name: NODE_ENV
+          value: production
+        - name: MONGODB_URI
+          valueFrom:
+            secretKeyRef:
+              name: linkbio-secrets
+              key: mongodb-uri
+        resources:
+          limits:
+            cpu: "1"
+            memory: "1Gi"
+          requests:
+            cpu: "500m"
+            memory: "512Mi"
