@@ -2,8 +2,8 @@
 
 <div align="center">
 
-[![Deploy to TKE](https://github.com/yourusername/linkhub/actions/workflows/deploy.yml/badge.svg)](https://github.com/yourusername/linkhub/actions/workflows/deploy.yml)
-[![Tests](https://github.com/yourusername/linkhub/actions/workflows/test.yml/badge.svg)](https://github.com/yourusername/linkhub/actions/workflows/test.yml)
+[![Deploy to TKE](https://github.com/RectiFlex/link-bio-app/actions/workflows/deploy.yml/badge.svg)](https://github.com/RectiFlex/link-bio-app/actions/workflows/deploy.yml)
+[![Tests](https://github.com/RectiFlex/link-bio-app/actions/workflows/test.yml/badge.svg)](https://github.com/RectiFlex/link-bio-app/actions/workflows/test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
